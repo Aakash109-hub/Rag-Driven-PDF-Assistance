@@ -90,4 +90,4 @@ Contributions are welcome! If you have ideas for improvements or want to add fea
 
 ---
 
-If you find this project helpful, please consider giving it a ⭐ on GitHub!
+If you find this project helpful, please consider giving it a ⭐ on GitHub
