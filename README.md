@@ -1,6 +1,6 @@
 # 📚 SmartPDF AI: A RAG-based PDF Assistant
 
-SmartPDF AI is a **Retrieval-Augmented Generation (RAG)** application that allows users to interact with PDF documents by asking questions and receiving context-based answers. This project combines 🔍 **Google Generative AI's** powerful embeddings and conversational AI with ⚡ **FAISS vector search** for efficient and accurate information retrieval.
+SmartPDF AI is a **Retrieval-Augmented Generation (RAG)** application that allows users to interact with PDF documents by asking questions and receiving context-based answers. This project combines 🔍 **Google Generative AI's** powerful embeddings and conversational AI with ⚡ **FAISS vector search** for efficient and accurate information retrieval
 
 ![Screenshot 2024-12-30 121437](https://github.com/user-attachments/assets/68388f77-8fc7-4542-8f55-03b0f454d12a)
 
