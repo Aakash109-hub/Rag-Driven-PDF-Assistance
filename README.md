@@ -19,7 +19,7 @@ SmartPDF AI is a **Retrieval-Augmented Generation (RAG)** application that allow
 ## 🌐 Live Demo
 The application is deployed on Render and is accessible online:
 
-👉 **[SmartPDF AI Live Application](https://smartai-pdfassist-ak19.onrender.com/)**
+👉 SmartPDF AI Live Application : https://smartai-pdfassist-ak19.onrender.com/
 
 ---
 
