@@ -1,6 +1,3 @@
-python-dotenv
-chromadb
-faiss-cpu
 
 python-dotenv
 PyPDF2
