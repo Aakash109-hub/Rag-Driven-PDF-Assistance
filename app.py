@@ -1,13 +1,17 @@
 import streamlit as st
 from PyPDF2 import PdfReader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-import os
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
-import google.generativeai as genai
-from langchain.vectorstores import FAISS
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.chains.question_answering import load_qa_chain
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_groq import ChatGroq
+from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
+from dotenv import load_dotenv
+import os
+import base64
+
+# Load environment variables
+load_dotenv()
 
 # Check if running locally or on Render
 if os.getenv("RENDER") is None:
