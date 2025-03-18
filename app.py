@@ -8,7 +8,6 @@ from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 import os
-import base64
 
 
 # Check if running locally or on Render
@@ -70,22 +69,6 @@ def user_input(user_question, chain):
     st.session_state.last_user_input = ""  # Clear input after response
     st.session_state.response_generated = True  # Flag to indicate response generated
 
-
-
-def display_pdf(file):
-    # Opening file from file path
-
-    base64_pdf = base64.b64encode(file.read()).decode("utf-8")
-
-    # Embedding PDF in HTML
-    pdf_display = f"""<iframe src="data:application/pdf;base64,{base64_pdf}" width="400" height="100%" type="application/pdf"
-                        style="height:100vh; width:100%"
-                    >
-                    </iframe>"""
-
-    # Displaying File
-    st.markdown(pdf_display, unsafe_allow_html=True)    
-
 # Main App
 def main():
     st.set_page_config(page_title="SmartPDF AI")
@@ -116,13 +99,6 @@ def main():
                     vector_store = get_vector_store(text_chunks)
                     st.session_state.vector_store = vector_store
                     st.success("✅ PDF Processing Complete!")
-        
-        # Display PDF preview (full page view)
-        if pdf_docs:
-            st.subheader("📑 PDF Preview")
-            for pdf in pdf_docs:
-                display_pdf(pdf)
-
     
     # Display chat history
     st.subheader("💬 Chat History")
